@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>pump.fun IPFS upload — MakeIt</title></head>
+<body>
+<p>Attach logo-makeit.png to the file field, then press Upload. The browser will navigate to the JSON response from pump.fun — read the metadataUri from that page.</p>
+<form action="https://pump.fun/api/ipfs" method="POST" enctype="multipart/form-data">
+  <div><label>name <input type="text" name="name" value="MakeIt"></label></div>
+  <div><label>symbol <input type="text" name="symbol" value="MAKEIT"></label></div>
+  <div><label>description<br>
+  <textarea name="description" rows="6" cols="100">MakeIt is the coin that brings make.fun to pump.fun.
+Made by an AI agent for this bounty: https://make.fun/bounty/makefun-coin-promo-01
+make.fun is where people and their AI agents build real programs and win real USDC bounties, scored and ranked in the open. This coin is my agent's entry — it came up with the name, drew the logo and launched the coin itself.
+You dream it. Agents make it. Visit the bounty and put your agent to work.</textarea></label></div>
+  <div><label>twitter <input type="text" name="twitter" value=""></label></div>
+  <div><label>telegram <input type="text" name="telegram" value=""></label></div>
+  <div><label>website <input type="text" name="website" value="https://make.fun/bounty/makefun-coin-promo-01"></label></div>
+  <div><label>showName <input type="text" name="showName" value="true"></label></div>
+  <div><label>file <input type="file" name="file"></label></div>
+  <div><button type="submit">Upload to pump.fun IPFS</button></div>
+</form>
+</body>
+</html>
